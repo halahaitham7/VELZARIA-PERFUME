@@ -1,0 +1,1192 @@
+/* =========================================================
+   VÉLZARIA — art-direction refinements (loaded last)
+   Palette · type scale · photography frames · spacing
+   ========================================================= */
+
+/* ---------- Foundations ---------- */
+body {
+  font-size: 16px;
+  line-height: 1.72;
+  color: var(--charcoal);
+  background: var(--ivory);
+}
+::selection {
+  background: var(--stone);
+  color: var(--espresso);
+}
+:focus-visible {
+  outline-color: var(--burgundy);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--espresso);
+}
+h1 em,
+h2 em,
+h3 em {
+  color: var(--burgundy);
+}
+.bg-charcoal h2 em,
+.bg-espresso h2 em {
+  color: var(--gold);
+}
+
+/* ---------- Type scale (readable minimums) ---------- */
+.eyebrow {
+  font-size: 11.5px;
+  letter-spacing: 0.24em;
+  color: var(--muted);
+}
+.eyebrow--gold {
+  color: var(--burgundy);
+}
+.lead {
+  font-size: clamp(16px, 1.25vw, 18px);
+  color: var(--muted);
+}
+.serif-lead {
+  color: var(--espresso);
+}
+.small {
+  font-size: 14px;
+}
+.tiny {
+  font-size: 12.5px;
+}
+.muted {
+  color: var(--muted);
+}
+.numeral {
+  color: var(--gold-deep);
+}
+.label,
+.field label {
+  font-size: 11.5px;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+}
+.caption {
+  font-size: 15px;
+  color: var(--muted);
+}
+.btn {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  --btn-bg: var(--espresso);
+}
+.btn::before {
+  background: var(--burgundy);
+}
+.btn--ghost {
+  --btn-bg: transparent;
+  --btn-fg: var(--espresso);
+}
+.btn--ghost::before {
+  background: var(--espresso);
+}
+.btn--light {
+  --btn-bg: var(--ivory);
+  --btn-fg: var(--espresso);
+}
+.btn--light::before {
+  background: var(--sand);
+}
+.btn--sm {
+  font-size: 11px;
+}
+.link {
+  font-size: 12px;
+  color: var(--espresso);
+}
+.link-inline {
+  text-decoration-color: var(--burgundy);
+}
+.chip {
+  font-size: 13px;
+}
+.tab {
+  font-size: 12px;
+}
+.input,
+.select,
+.textarea {
+  font-size: 16px;
+}
+
+/* ---------- Selected / active states — burgundy ---------- */
+.chip[aria-pressed='true'],
+.chip.is-active,
+.size.is-active,
+.intensity__opt.is-selected {
+  background: var(--burgundy);
+  border-color: var(--burgundy);
+  color: var(--ivory);
+}
+.size.is-active small {
+  color: #ead7db;
+}
+.opt.is-selected,
+.note-card.is-selected,
+.sil.is-selected {
+  border-color: var(--burgundy);
+  background: #f6eeea;
+}
+.opt.is-selected .opt__letter,
+.note-card__check,
+.check input:checked {
+  background: var(--burgundy);
+  border-color: var(--burgundy);
+  color: var(--ivory);
+}
+.tint.is-selected {
+  border-color: var(--burgundy);
+  box-shadow: 0 0 0 1px var(--burgundy);
+}
+.pay.is-active {
+  border-color: var(--burgundy);
+}
+.pay.is-active .pay__radio {
+  border-color: var(--burgundy);
+}
+.pay.is-active .pay__radio::after {
+  background: var(--burgundy);
+}
+.tab.is-active,
+.tab:hover {
+  color: var(--espresso);
+  border-bottom-color: var(--burgundy);
+}
+.account__nav button.is-active {
+  border-bottom-color: var(--burgundy);
+  color: var(--espresso);
+}
+.gallery__thumb.is-active,
+.gallery__thumb:hover {
+  border-color: var(--burgundy);
+}
+.nav__link::after {
+  background: var(--burgundy);
+}
+.badge {
+  background: var(--burgundy);
+}
+.quiz__progress i,
+.drawer__bar i {
+  background: var(--burgundy);
+}
+.pcard__wish.is-saved,
+.pcard__wish:hover {
+  color: var(--burgundy);
+}
+.stars,
+.pcard__rating,
+.rating-input button {
+  color: var(--gold-deep);
+}
+.timeline-v .is-current .timeline-v__dot {
+  box-shadow: 0 0 0 5px rgba(107, 38, 56, 0.16);
+}
+.footer ul a:hover,
+.crumbs a:hover {
+  color: var(--burgundy);
+}
+
+/* ---------- Navigation ---------- */
+.announce {
+  background: var(--espresso);
+  color: var(--on-dark);
+  font-size: 11px;
+}
+.announce__dot {
+  color: var(--gold);
+}
+.nav {
+  background: rgba(247, 243, 237, 0.95);
+}
+.nav__link {
+  font-size: 12px;
+  color: var(--espresso);
+}
+.nav__search,
+.nav__account {
+  font-size: 11.5px;
+  color: var(--espresso);
+}
+.menu__panel {
+  background: var(--ivory);
+}
+.menu__foot {
+  font-size: 12px;
+}
+
+/* ---------- Footer — deep espresso anchor ---------- */
+.footer {
+  background: var(--espresso);
+  color: var(--on-dark);
+}
+.footer .logo__word,
+.footer__statement {
+  color: #fbf6ef;
+}
+.footer h4 {
+  color: var(--gold);
+}
+.footer ul {
+  font-size: 15px;
+}
+.footer ul a:hover {
+  color: var(--gold);
+}
+.footer .small,
+.footer .muted {
+  color: var(--on-dark-muted);
+}
+.footer__social .icon-btn {
+  color: var(--on-dark);
+}
+.footer__social .icon-btn:hover {
+  background: rgba(239, 230, 218, 0.08);
+}
+.footer .input--line {
+  color: var(--on-dark);
+  border-bottom-color: rgba(239, 230, 218, 0.35);
+}
+.footer .input--line::placeholder {
+  color: var(--on-dark-muted);
+}
+.footer .news-form__btn {
+  color: var(--on-dark);
+}
+.footer .news-form__ok {
+  color: #cfd8bb;
+}
+.footer__bottom {
+  border-top-color: rgba(239, 230, 218, 0.14);
+  color: var(--on-dark-muted);
+  font-size: 12.5px;
+}
+.footer__proto {
+  color: var(--gold);
+}
+
+/* ---------- Dark sections ---------- */
+.bg-charcoal {
+  background: var(--espresso);
+  color: var(--on-dark);
+}
+.story-band__cols p {
+  color: var(--on-dark);
+  font-size: 16px;
+}
+.story-band__quote .small {
+  color: var(--on-dark-muted);
+}
+
+/* ---------- Spacing rhythm ---------- */
+.section {
+  padding: clamp(64px, 8vw, 120px) 0;
+}
+.section--tight {
+  padding: clamp(48px, 5.5vw, 84px) 0;
+}
+.page-header {
+  padding: clamp(44px, 6vw, 88px) 0 clamp(28px, 3.5vw, 48px);
+}
+.page-header .lead {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   Photography — always whole, never stretched
+   ========================================================= */
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.frame {
+  position: relative;
+  margin: 0;
+}
+.frame--mat {
+  background: var(--stone);
+  padding: clamp(14px, 2.6vw, 34px);
+}
+.frame--fit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--stone);
+}
+.frame--fit .photo {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.frame--fit.frame--mat {
+  padding: 7%;
+}
+.frame--fit.frame--mat .photo {
+  box-shadow: 0 24px 40px -28px rgba(48, 37, 33, 0.6);
+}
+.frame--tall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frame--tall .photo {
+  width: auto;
+  max-width: 100%;
+  max-height: min(78vh, 720px);
+}
+.frame .caption {
+  margin-top: 14px;
+  align-self: flex-start;
+}
+.frame--mat .caption {
+  align-self: center;
+  text-align: center;
+}
+
+/* Legacy stage wrapper, if used with a photo: follow the image exactly */
+.stage--photo {
+  height: auto !important;
+  min-height: 0 !important;
+  background: var(--stone);
+}
+.stage--photo > .photo {
+  object-fit: contain;
+}
+
+/* Product cards: the 4:5 packshot shown whole */
+.pcard__photo {
+  display: block;
+  background: var(--stone);
+}
+.pcard__photo .photo {
+  transition: filter 0.8s var(--ease);
+}
+.pcard:hover .pcard__photo .photo {
+  filter: brightness(1.04) contrast(1.02);
+}
+.pcard__name {
+  font-size: clamp(26px, 2.2vw, 31px);
+}
+.pcard__desc {
+  font-size: 15px;
+}
+.pcard__price {
+  color: var(--espresso);
+}
+
+/* Thumbnails (cart, checkout, orders, search) */
+.thumb {
+  aspect-ratio: 4 / 5;
+}
+.thumb--photo,
+.thumb--discovery {
+  padding: 0;
+  background: var(--stone);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.thumb--photo .photo,
+.thumb--discovery .photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.bespoke-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dcase-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.search__thumb--photo {
+  width: 56px;
+  height: 70px;
+  background: var(--stone);
+}
+.search__thumb--photo .photo {
+  height: 100%;
+  object-fit: contain;
+}
+.line__opts {
+  font-size: 13.5px;
+}
+.search__list small {
+  font-size: 13.5px;
+}
+
+/* Quick view */
+.qv {
+  align-items: start;
+}
+.qv__visual {
+  display: block;
+  background: var(--stone);
+}
+
+/* ================= HOME ================= */
+.hero__photo {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background: #2b201c;
+}
+.hero__frame {
+  position: relative;
+  width: min(100%, calc((100vh - 150px) * 1536 / 852));
+  aspect-ratio: 1536 / 852;
+}
+.hero__frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  animation: heroPhotoIn 2s var(--ease-out) both;
+}
+@media (max-width: 700px) {
+  .hero__photo {
+    height: auto;
+  }
+  .hero__frame {
+    width: 100%;
+  }
+}
+
+/* Philosophy */
+.philo__grid {
+  align-items: center;
+}
+.philo__image {
+  align-self: center;
+}
+.philo__words span {
+  font-size: 11.5px;
+}
+
+/* Five essences — five equal columns, each bottle whole */
+.essences__rail {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  min-height: 0;
+}
+.essence,
+.essence.is-active {
+  flex: none;
+}
+.essence__media {
+  height: auto;
+  background: var(--stone);
+}
+.essence__num {
+  color: #fbf6ef;
+  opacity: 0.9;
+  text-shadow: 0 2px 12px rgba(30, 20, 15, 0.45);
+  font-size: 30px;
+}
+.essence__body {
+  padding: 22px 20px 24px;
+}
+.essence__name {
+  white-space: normal;
+  font-size: clamp(23px, 1.8vw, 28px);
+}
+.essence__summary,
+.essence__notes {
+  opacity: 1;
+  max-height: none;
+}
+.essence__summary {
+  font-size: 14.5px;
+}
+.essence__notes {
+  font-size: 13.5px;
+}
+.essence__notes dt {
+  font-size: 10.5px;
+}
+@media (max-width: 1100px) {
+  .essences__rail {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .essence,
+  .essence.is-active {
+    flex: 0 0 min(72vw, 300px);
+  }
+}
+
+/* Best sellers — three aligned cards */
+.best__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.best__item:nth-child(n) {
+  margin-top: 0;
+}
+.best__badge {
+  font-size: 10.5px;
+  color: var(--espresso);
+}
+@media (max-width: 900px) {
+  .best__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .best__item--lead {
+    grid-column: auto;
+  }
+}
+@media (max-width: 560px) {
+  .best__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Create teaser — a perfumer's formula card, no imagery */
+.create-teaser {
+  min-height: 0;
+  background: var(--sand);
+}
+.create-teaser__visual {
+  background: var(--espresso);
+  padding: clamp(40px, 6vw, 96px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formula {
+  width: min(460px, 100%);
+  border: 1px solid rgba(182, 154, 114, 0.45);
+  padding: clamp(28px, 4vw, 48px);
+  color: var(--on-dark);
+}
+.formula__label {
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 26px;
+}
+.formula__name {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1;
+  color: #fbf6ef;
+  margin-bottom: 10px;
+}
+.formula__by {
+  font-size: 13.5px;
+  color: var(--on-dark-muted);
+  margin-bottom: 28px;
+}
+.formula__tiers {
+  margin: 0;
+  border-top: 1px solid rgba(239, 230, 218, 0.16);
+}
+.formula__tiers div {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(239, 230, 218, 0.16);
+}
+.formula__tiers dt {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding-top: 4px;
+}
+.formula__tiers dd {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 20px;
+  color: #fbf6ef;
+}
+.formula__foot {
+  margin: 20px 0 0;
+  font-size: 12.5px;
+  letter-spacing: 0.08em;
+  color: var(--on-dark-muted);
+}
+.create-teaser__steps {
+  font-size: 15px;
+}
+
+/* Discovery */
+.discovery__visual {
+  background: none;
+  padding: 0;
+}
+.discovery__list li {
+  font-size: 20px;
+}
+.discovery__list small {
+  font-size: 12.5px;
+}
+
+/* Reviews */
+.review--0 {
+  background: var(--sand);
+}
+.review p {
+  font-size: 15.5px;
+}
+.review__mark {
+  color: var(--gold);
+  opacity: 0.45;
+}
+.review footer {
+  font-size: 13px;
+}
+.review__product {
+  color: var(--burgundy);
+}
+
+/* ================= SHOP ================= */
+.shop-bar {
+  background: rgba(247, 243, 237, 0.96);
+}
+.shop-grid {
+  gap: 56px clamp(20px, 2.6vw, 36px);
+}
+.shop-grid .pcard:nth-child(n) {
+  margin-top: 0;
+}
+.promo {
+  background: var(--sand);
+}
+.promo:hover {
+  background: var(--stone);
+}
+.promo p {
+  font-size: 15px;
+}
+
+/* ================= PRODUCT ================= */
+.gallery {
+  grid-template-columns: 96px 1fr;
+}
+.gallery__thumb {
+  display: grid;
+  gap: 6px;
+  padding: 0;
+  border: 1px solid transparent;
+  opacity: 0.75;
+  background: none;
+}
+.gallery__thumb.is-active,
+.gallery__thumb:hover {
+  opacity: 1;
+}
+.gallery__thumb-label {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  padding: 0 4px 6px;
+  text-align: center;
+  line-height: 1.3;
+}
+.gallery__main .frame {
+  animation: fadeIn 0.6s var(--ease) both;
+}
+.pdp__persona {
+  color: var(--espresso);
+}
+.pdp__ship summary {
+  font-size: 12px;
+}
+.pdp__ship details p,
+.notes-mini div {
+  font-size: 14.5px;
+}
+.notes-mini dt {
+  font-size: 10.5px;
+}
+.extra .check {
+  font-size: 15px;
+}
+.extra__note {
+  font-size: 13px;
+}
+@media (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .gallery__thumbs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* "Who Is She?" — a typographic chapter on espresso */
+.who-band {
+  background: var(--espresso);
+  color: var(--on-dark);
+}
+.who {
+  grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+  align-items: start;
+}
+.who__aside {
+  position: sticky;
+  top: 160px;
+  border-top: 1px solid rgba(182, 154, 114, 0.5);
+  padding-top: 24px;
+}
+.who__num {
+  display: block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(96px, 12vw, 180px);
+  line-height: 0.85;
+  color: var(--gold);
+}
+.who__archetype {
+  margin: 18px 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--on-dark-muted);
+}
+.who__persona {
+  font-family: var(--serif);
+  font-size: 24px;
+  line-height: 1.35;
+  color: #fbf6ef;
+}
+.who-band .eyebrow--gold {
+  color: var(--gold);
+}
+.who-band .who__title {
+  color: #fbf6ef;
+}
+.who-band .who__text p {
+  color: var(--on-dark);
+}
+.who-band .who__traits span {
+  border-color: rgba(239, 230, 218, 0.3);
+  color: var(--on-dark);
+  font-size: 12px;
+}
+.who-band .who__moments {
+  color: var(--on-dark-muted);
+  border-top-color: rgba(239, 230, 218, 0.16);
+  font-size: 14px;
+}
+.who-band .label {
+  color: var(--gold);
+}
+@media (max-width: 900px) {
+  .who {
+    grid-template-columns: 1fr;
+  }
+  .who__aside {
+    position: static;
+  }
+}
+.pyramid__tier h3 {
+  font-size: 32px;
+}
+.pyramid__tier ul {
+  font-size: 23px;
+}
+
+/* ================= STORY / SERVICE PAGES ================= */
+.story-hero {
+  padding: clamp(48px, 7vw, 110px) 0 clamp(32px, 4vw, 56px);
+}
+.chapter {
+  align-items: center;
+}
+.chapter__copy p {
+  font-size: 16px;
+}
+.values p {
+  color: var(--on-dark-muted);
+  font-size: 15px;
+}
+.timeline p {
+  font-size: 15px;
+}
+.feature-list p {
+  font-size: 15px;
+}
+
+/* ================= AWARD ================= */
+.award-hero__visual--photo {
+  aspect-ratio: auto;
+  border-radius: 0;
+  background: none;
+}
+.award-hero__visual--photo > .photo {
+  position: static;
+}
+.steps-row p,
+.award-card ul,
+.award-card ol,
+.criteria div,
+.terms-block {
+  font-size: 15px;
+}
+.criteria i b {
+  background: var(--burgundy);
+}
+.award-timeline strong {
+  font-size: 20px;
+}
+
+/* ================= CREATE ================= */
+.quiz-intro__visual--photo .photo {
+  aspect-ratio: auto;
+}
+.quiz-intro__list {
+  font-size: 14px;
+}
+.quiz__steps button {
+  font-size: 11.5px;
+}
+.opt__text small,
+.intensity__opt small {
+  font-size: 14px;
+}
+.note-card__pos {
+  font-size: 10.5px;
+}
+.note-card .swatch {
+  width: 58%;
+}
+.swatch {
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.55), transparent 45%),
+    radial-gradient(circle at 70% 78%, color-mix(in srgb, var(--c) 72%, #000 20%), transparent 72%),
+    var(--c);
+}
+.profile__pct {
+  font-size: 13px;
+}
+.result__hero {
+  background: var(--sand);
+}
+.result__bottle--photo {
+  aspect-ratio: auto;
+}
+.also {
+  background: var(--sand);
+}
+.also__bottle--photo .photo {
+  height: 100%;
+  object-fit: contain;
+}
+.sil {
+  background: var(--white);
+}
+.sil .photo {
+  height: auto;
+}
+.sil small {
+  font-size: 11px;
+}
+.preview__ref {
+  width: 20%;
+}
+.preview__ref figcaption {
+  font-size: 10.5px;
+}
+.finish__visual--photo {
+  aspect-ratio: auto;
+  border-radius: 0;
+  background: none;
+  display: block;
+}
+.finish__visual--photo > .photo {
+  position: static;
+}
+.finish__spec {
+  position: static;
+  margin-top: 14px;
+}
+.finish__spec li {
+  background: var(--sand);
+  font-size: 13px;
+}
+
+/* ================= ACCOUNT / AUTH ================= */
+.auth__visual {
+  background: var(--espresso);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: clamp(32px, 5vw, 72px);
+}
+.auth__photo {
+  position: static;
+  width: min(100%, 560px);
+  height: auto;
+}
+.auth__quote {
+  position: static;
+  color: var(--on-dark);
+  text-shadow: none;
+}
+.creation__bottle--photo {
+  min-height: 0;
+  background: var(--stone);
+  align-self: start;
+}
+.acc-stats a {
+  background: var(--sand);
+}
+.acc-stats a:hover {
+  background: var(--stone);
+}
+.acc-stats span {
+  font-size: 11.5px;
+}
+.order-row__status {
+  color: var(--burgundy);
+  font-size: 11.5px;
+}
+.summary {
+  background: var(--sand);
+}
+.notice {
+  background: rgba(239, 232, 222, 0.7);
+  font-size: 14px;
+}
+.toast {
+  background: var(--espresso);
+}
+
+/* ---------- Review fixes ---------- */
+.bg-charcoal .eyebrow--gold,
+.bg-espresso .eyebrow--gold,
+.create-teaser__visual .eyebrow--gold {
+  color: var(--gold);
+}
+.essence__body > .eyebrow {
+  min-height: 2.9em;
+}
+.best__item {
+  display: flex;
+  flex-direction: column;
+}
+.best__item > .pcard,
+.shop-grid > .reveal > .pcard,
+.related__grid > .reveal > .pcard {
+  flex: 1;
+  height: 100%;
+}
+.shop-grid > .reveal,
+.related__grid > .reveal {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Page review fixes, round 2 ---------- */
+/* Award hero keeps the page gutters */
+.award-hero.container {
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+/* Discovery Set page: photograph at full column width */
+.dsp__visual {
+  background: none;
+  padding: 0;
+}
+/* Feature lists: only the outer row is a grid */
+.feature-list > div {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+}
+.feature-list > div > div {
+  display: block;
+  padding: 0;
+  border: 0;
+}
+/* "Who Is She?" — labels stay in the sans-serif label style */
+.who-band .who__text p.eyebrow {
+  font-family: var(--sans);
+  font-size: 11.5px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.who-band .who__text p.who__moments {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* Compact product cards for 4–5 across rows */
+.pcard--compact .pcard__meta {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.pcard--compact .pcard__name {
+  font-size: clamp(22px, 1.8vw, 27px);
+}
+.pcard--compact .pcard__desc {
+  font-size: 14px;
+}
+.pcard--compact .pcard__foot {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+.pcard--compact .pcard__foot .btn {
+  width: 100%;
+}
+.gift-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+@media (max-width: 1100px) {
+  .gift-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 700px) {
+  .gift-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 460px) {
+  .gift-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Sign-in: panel height from content, capped */
+.auth {
+  min-height: min(78vh, 820px);
+}
+.auth__visual {
+  display: flex;
+}
+/* Shop: the Discovery Set completes the grid */
+.shop-tile {
+  display: flex;
+  flex-direction: column;
+}
+.shop-tile__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 5;
+  background: var(--espresso);
+  padding: 8%;
+}
+.shop-tile__media .photo {
+  box-shadow: 0 30px 50px -30px rgba(0, 0, 0, 0.7);
+}
+.shop-tile__body {
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.shop-tile__body .pcard__foot {
+  margin-top: auto;
+}
+
+/* ---------- Bottle preview (photographed) ---------- */
+.preview__photo {
+  position: relative;
+  background: var(--stone);
+  animation: fadeIn 0.6s var(--ease) both;
+}
+.preview__spec {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.preview__spec li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--sand);
+  padding: 7px 12px;
+  font-size: 13px;
+}
+.preview__spec .dot {
+  width: 12px;
+  height: 12px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.preview__note {
+  margin: 0;
+}
+.stage__engraving--serif {
+  font-style: normal;
+  letter-spacing: 0.24em;
+  font-size: 14px;
+}
+.stage__engraving--initials {
+  font-style: normal;
+  letter-spacing: 0.16em;
+}
+.bottle-gallery__stage--photo {
+  padding: 0;
+  display: block;
+  background: var(--stone);
+}
+@media (max-width: 900px) {
+  .preview {
+    position: static;
+  }
+}
+
+/* ---------- Round 3 ---------- */
+.h1,
+.h2,
+.h3 {
+  font-family: var(--serif);
+  color: var(--espresso);
+}
+.checkout__section legend {
+  font-weight: 400;
+}
+.mini-lines__thumb .thumb {
+  padding: 0;
+}
+
+/* Entrance animations never crop a photograph — fade only */
+.reveal-img {
+  clip-path: none;
+  transform: translateY(18px);
+  transition: opacity 1.2s var(--ease-out), transform 1.2s var(--ease-out);
+}
+.reveal-img.is-in {
+  clip-path: none;
+  transform: none;
+}
+@keyframes heroPhotoIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
